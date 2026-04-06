@@ -695,7 +695,25 @@
 
   <script src="../assets/vendor/waypoints/jquery.waypoints.min.js"></script>
 
-  <script src="../assets/js/google-maps.js"></script>
+  <script>
+function initMap() {
+  const lokasi = { lat: -7.1539, lng: 112.6561 };
+
+  const map = new google.maps.Map(document.getElementById("google-maps"), {
+    zoom: 15,
+    center: lokasi
+  });
+
+  new google.maps.Marker({
+    position: lokasi,
+    map: map
+  });
+}
+</script>
+
+<script async defer
+src="https://maps.googleapis.com/maps/api/js?key=API_KEY_KAMU&callback=initMap">
+</script>
     
   <script src="../assets/js/topbar-virtual.js"></script>
 
