@@ -697,16 +697,17 @@
 
   <script>
 function initMap() {
-  const lokasi = { lat: -7.1539, lng: 112.6561 };
+  const lokasi = { lat: -7.1719, lng: 112.6561 };
 
   const map = new google.maps.Map(document.getElementById("google-maps"), {
-    zoom: 15,
+    zoom: 16,
     center: lokasi
   });
 
   new google.maps.Marker({
     position: lokasi,
     map: map
+    title: "Jl. Sampit No.28 GKB"
   });
 }
 </script>
